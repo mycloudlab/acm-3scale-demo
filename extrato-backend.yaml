@@ -1,0 +1,20 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Backend
+metadata:
+  name: extrato
+  namespace: 3scale-demo
+spec:
+  description: Api de Extrato
+  mappingRules:
+    - httpMethod: GET
+      increment: 1
+      metricMethodRef: hits
+      pattern: '/extrato/{agencia}/{conta}'
+  metrics:
+    hits:
+      description: Number of API hits
+      friendlyName: Hits
+      unit: hit
+  name: Extrato API
+  privateBaseURL: 'https://echo-api.3scale.net/'
+  systemName: extrato
