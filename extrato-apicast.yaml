@@ -1,7 +1,7 @@
 apiVersion: apps.3scale.net/v1alpha1
 kind: APIcast
 metadata:
-  name: extrato-apicast-prod
+  name: conta-apicast-prod
   namespace: 3scale-demo
 spec:
   adminPortalCredentialsRef:
@@ -19,6 +19,6 @@ spec:
   logLevel: warn
   responseCodesIncluded: true
   exposedHost:
-    host: extrato.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com
+    host: conta.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com
     tls:
     - {}
