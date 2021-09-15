@@ -20,7 +20,7 @@ spec:
       friendlyName: Hits
       unit: hit
   name: API de conta
-  systemName: contas
+  systemName: contasbb
   backendUsages:
     extrato_conta:
       path: /extrato
