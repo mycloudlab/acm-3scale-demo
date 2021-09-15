@@ -1,0 +1,33 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Product
+metadata:
+  name: conta
+  namespace: 3scale-demo
+spec:
+  description: Api para gerenciamento de contas
+  mappingRules:
+    - httpMethod: GET
+      increment: 1
+      metricMethodRef: extrato
+      pattern: '/extrato/{agencia}/{conta}'
+  metrics:
+    extrato:
+      description: hits para recuperação de extrato
+      friendlyName: Extrato
+      unit: hit
+    hits:
+      description: Number of API hits
+      friendlyName: Hits
+      unit: hit
+  name: API de conta
+  systemName: conta
+  backendUsages:
+    extrato:
+      path: /extrato
+  deployment:
+    apicastSelfManaged:
+      stagingPublicBaseURL: "https://conta-stage.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com"
+      productionPublicBaseURL: "https://conta.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com"
+  applicationPlans:
+    plano_default:
+      name: "Plano padrão"
