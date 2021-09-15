@@ -2,6 +2,7 @@ apiVersion: apps.3scale.net/v1alpha1
 kind: APIcast
 metadata:
   name: extrato-apicast-prod
+  namespace: 3scale-demo
 spec:
   adminPortalCredentialsRef:
     name: apicast-secret
