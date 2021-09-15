@@ -8,7 +8,7 @@ spec:
     name: apicast-secret
   replicas: 1
   resources:
-    requests:
+    requests: 
       memory: "150Mi"
       cpu: "300m"
     limits:
