@@ -1,0 +1,23 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIcast
+metadata:
+  name: extrato-apicast-prod
+spec:
+  adminPortalCredentialsRef:
+    name: apicast-secret
+  replicas: 1
+  resources:
+    requests:
+      memory: "150Mi"
+      cpu: "300m"
+    limits:
+      memory: "500Mi"
+      cpu: "2000m"
+  deploymentEnvironment: staging
+  configurationLoadMode: lazy
+  logLevel: warn
+  responseCodesIncluded: true
+  exposedHost:
+    host: extrato.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com
+    tls:
+    - {}
