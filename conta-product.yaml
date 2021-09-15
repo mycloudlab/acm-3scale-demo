@@ -3,7 +3,7 @@ kind: Product
 metadata:
   name: conta
   namespace: 3scale-demo
-spec:
+spec: 
   description: Api para gerenciamento de contas
   mappingRules:
     - httpMethod: GET
