@@ -5,7 +5,7 @@ metadata:
   namespace: 3scale-demo
 spec:
   adminPortalCredentialsRef:
-    name: apicast-secret
+    name: apicast-stage-secret
   replicas: 1
   resources:
     requests: 
