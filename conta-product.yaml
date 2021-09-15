@@ -1,7 +1,7 @@
 apiVersion: capabilities.3scale.net/v1beta1
 kind: Product
 metadata:
-  name: contas
+  name: contasbb
   namespace: 3scale-demo
 spec: 
   description: Api para gerenciamento de contas
@@ -22,7 +22,7 @@ spec:
   name: API de conta
   systemName: contas
   backendUsages:
-    extrato:
+    extrato_conta:
       path: /extrato
   deployment:
     apicastSelfManaged:
