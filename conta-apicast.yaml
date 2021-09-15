@@ -14,7 +14,7 @@ spec:
     limits:
       memory: "500Mi"
       cpu: "2000m"
-  deploymentEnvironment: staging
+  deploymentEnvironment: production
   configurationLoadMode: lazy
   logLevel: warn
   responseCodesIncluded: true
