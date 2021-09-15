@@ -1,7 +1,7 @@
 apiVersion: capabilities.3scale.net/v1beta1
 kind: Backend
 metadata:
-  name: extrato_conta
+  name: extrato
   namespace: 3scale-demo
 spec:
   description: Api de Extrato
@@ -17,4 +17,4 @@ spec:
       unit: hit
   name: Extrato API
   privateBaseURL: 'https://echo-api.3scale.net/'
-  systemName: extrato_conta
+  systemName: extrato
