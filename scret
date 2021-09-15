@@ -1,3 +1,0 @@
-oc create secret generic apicast-secret --from-literal=AdminPortalURL=https://ef85066c574c8b064fdffb7f568b3764c2b0c50d688ffb2eea0408f7366a5fd5@3scale-admin.3scale.apps.cluster-ckzm4.ckzm4.sandbox1804.opentlc.com/
-
-
